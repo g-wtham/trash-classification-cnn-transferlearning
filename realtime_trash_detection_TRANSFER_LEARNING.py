@@ -12,7 +12,7 @@ labels = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
 For static image classification :
     
 img2 = cv2.imread('glass269.jpg')
-resized_frame = cv2.resize(img2, (300, 300))  # Resize to model's input size
+resized_frame = cv2.resize(img2, (224, 224))  # Resize to model's input size
 normalized_frame = resized_frame / 255.0      # Normalize pixel values
 input_frame = np.expand_dims(normalized_frame, axis=0)  # Add batch dimension
 
@@ -29,7 +29,7 @@ while True:
     if not ret:
         break
 
-    resized_frame = cv2.resize(frame, (300, 300))  # Resize to model's input size, same as during CNN training process!
+    resized_frame = cv2.resize(frame, (224, 224))  # Resize to model's input size, same as NasNet training process!
     normalized_frame = resized_frame / 255.0  
     input_frame = np.expand_dims(normalized_frame, axis=0)  
 
