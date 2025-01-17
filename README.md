@@ -2,6 +2,8 @@
 
 This project implements real-time garbage classification using both Custom **CNN** and **Transfer Learning** approaches (MobileNetV2 & NASNetMobile). The system can identify different types of waste materials through computer vision to help automate waste sorting processes and improve recycling efficiency. Includes the [complete guide](https://github.com/g-wtham/trash-classification-cnn-transferlearning/tree/main/complete_document_guide) to re-implement this on your own! 
 
+To view the web version & the code : [Garbage Classification using FastAPI](https://github.com/g-wtham/garbage-classifier-fastapi)
+
 ## Dataset Details
 
 The project uses the TrashNet dataset:
